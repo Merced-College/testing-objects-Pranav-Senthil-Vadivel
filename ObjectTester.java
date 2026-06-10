@@ -43,5 +43,21 @@ public class ObjectTester {
         System.out.println("d3 now = " + d3);
 
         // Checkpoint Q5: Private fields are better because they stop data from being changed directly. Getter and setters let me control the values. This way I can make sure age cannot be a negative number in setAge()
+
+
+        System.out.println("\nTesting Car class:");
+
+        Car car1 = new Car();
+        System.out.println(car1);
+
+        
+        Car car2 = new Car("Cadillac", "CT5 V-Blackwing", 2024);
+        System.out.println(car2);
+
+        car2.setYear(2026);
+        car2.setModel("Rivian");
+
+        System.out.println("Updated car: " + car2);
+
     }
 }
